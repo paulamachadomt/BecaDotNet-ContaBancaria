@@ -8,7 +8,7 @@ namespace BecaDotNet
         private string NumeroConta { get; set; }
         private string NomeTitular { get; set; }
         private double Saldo { get; set; }
-        public string Operação { get; set; }
+        
 
         public ContaBancaria(string numeroConta, string nomeTitular, double saldo)
         {
