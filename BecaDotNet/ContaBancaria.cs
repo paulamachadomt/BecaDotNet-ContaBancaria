@@ -30,7 +30,7 @@ namespace BecaDotNet
 
             Console.WriteLine("Haverá depósito inicial (S/N)? ");
             string escolhaDepositoInicial = Console.ReadLine();
-            
+                     
 
             double deposito = 0.0;
 
@@ -40,7 +40,8 @@ namespace BecaDotNet
                 deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
 
-            return new ContaBancaria(numeroConta, nomeTitular, deposito);
+            ContaBancaria contaBancaria = new ContaBancaria(numeroConta, nomeTitular, deposito);
+            return contaBancaria;
         }
              
 
@@ -78,10 +79,7 @@ namespace BecaDotNet
         {
             return "Conta: " + NumeroConta + ", Titular: " + NomeTitular + ", Saldo: $ " + Saldo.ToString("F2");
         }
-
-
-
-
+                     
 
 
     }
